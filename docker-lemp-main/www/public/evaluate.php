@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <main>
+    <main id="result">
         <h1>Matematik-test</h1>
 
         <?php
         $name = $_POST['name'];
 
         $questionsAmount = 15; // Antal frågor
-
+        $points = 0;
 
         $ans = array();
         for ($i = 1; $i <= $questionsAmount; $i++) {
@@ -25,12 +25,13 @@
             
             if (($ans[$i - 1] == $cor[0])) {
                 echo ("
-                <fieldset> 
+                <fieldset class='correct'> 
                     <Legend>Fråga " . $i . "</Legend> 
                     <b> " . $cor[1] . "</b> 
                     <br>
                     <p>Ditt svar: "  . $ans[$i - 1] . "</p> 
                 </fieldset>");
+                $points++;
             } else {
                 echo ("
                 <fieldset class='wrong'> 
@@ -44,12 +45,6 @@
         }
 
 
-        $points = 0;
-        for ($i = 1; $i <= $questionsAmount; $i++) {
-            if ($ans[$i - 1] == $cor[0]) {
-                $points++;
-            }
-        }
 
 
         echo ("<p>" . $name . " fick " . $points . " poäng!</p>");

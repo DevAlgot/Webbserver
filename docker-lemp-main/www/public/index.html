@@ -6,20 +6,24 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <script src="script.js"></script>
+   <link rel="stylesheet" href="style.css">
    
 </head>
 
 <body>
-   <h1>Matematik-test</h1>
-   <form action="evaluate.php" method="post">
-      <fieldset id="questions">
-         <legend>Frågor</legend>
-         <label>Namn: </label>
-         <input type="text" name="name">
-         <br>
+   <main>
+      <h1>Matematik-test</h1>
+      <form action="evaluate.php" method="post">
+         <fieldset id="questions">
+            <legend>Frågor</legend>
+            <div class="question">
+               <label>Namn: </label>
+               <input type="text" name="name">
+            </div>
 
-      </fieldset>
-   </form>
+         </fieldset>
+      </form>
+   </main>
 </body>
 
 </html>
