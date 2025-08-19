@@ -5,7 +5,7 @@ function start(){
 
     for(let i = 0; i < 15; i++) {
 
-        let random = `${getRandomArbitrary(1, 100)} ${x[getRandomArbitrary(0, 3)]} ${getRandomArbitrary(10, 10)}`;
+        let random = `${getRandomArbitrary(1, 100)} + ${getRandomArbitrary(1, 10)}`;
         let evalResult = eval(random);
 
         quest.innerHTML += `
