@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <?php
+        include("header.html")
+    ?>
     <main id="result">
         <h1>Matematik-test</h1>
 
@@ -50,6 +53,9 @@
         echo ("<p>" . $name . " fick " . $points . " poäng!</p>");
         ?>
     </main>
+    <?php
+        include("footer.html");
+    ?>
 
 </body>
 
