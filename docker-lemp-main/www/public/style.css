@@ -38,8 +38,8 @@ main fieldset b {
 
 
 .correct {
-    border: 4px solid #008000c7;
-    box-shadow: 0 0 10px 0 #008000c7;
+    border: 4px solid #009400;
+    box-shadow: 0 0 10px 0 #008f00c7;
 }
 
 .wrong {
